@@ -17,7 +17,7 @@ class Extras:
         embed = discord.Embed(title="Kurisu", color=discord.Color.green())
         embed.set_author(name="916253 and ihaveahax, modified for this server by phoen1x74")
         embed.set_thumbnail(url="http://static.zerochan.net/Makise.Kurisu.full.1998946.jpg")
-        embed.url = "https://github.com/916253/Kurisu"
+        embed.url = "https://github.com/phoen1x74/Kurisu"
         embed.description = "Kurisu, the 3DS Hacking Discord bot!"
         await self.bot.say("", embed=embed)
 
