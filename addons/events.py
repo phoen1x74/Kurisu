@@ -12,53 +12,6 @@ class Events:
     def __init__(self, bot):
         self.bot = bot
         print('Addon "{}" loaded'.format(self.__class__.__name__))
-
-    piracy_tools = [
-        'freeshop',
-        'free shop',
-        'fr3eshop',
-        'fr33shop',
-        'fre3shop',
-        'ciangel',
-        'cia angel',
-        'tikdevil',
-        'tikshop',
-        'fr335h0p',
-        'fr€€shop',
-        'fr€€sh0p',
-        'fr3e sh0p',
-        'fr//shop',
-        'fr//sh0p',
-        'fre shop',
-        'free$hop',
-        'free $hop',
-        'fr$$hop',
-        'friishop',
-        'frii shop',
-        'fr££shop',
-        'fr££ shop',
-        'fr£€shop',
-        'fr£ shop',
-        'fr£eshop',
-        'fr£e shop',
-        'fre£shop',
-        'fre£ shop',
-        'fr€£shop',
-        'threeshop',
-        'thr33shop',
-        'thr33 shop',
-        'thr££ shop',
-        'thr££shop',
-        'thr£eshop',
-        'thr33 shop',
-        'thr£e shop',
-        'thr33shop',
-        'fr33sh0p',
-        'free-shop',
-        'freshop',
-        'fresh0p',
-    ]
-
     async def scan_message(self, message):
         if message.author == self.bot.server.me or self.bot.staff_role in message.author.roles or message.channel == self.bot.helpers_channel:  # don't process messages by the bot or staff or in the helpers channel
             return

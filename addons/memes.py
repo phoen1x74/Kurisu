@@ -36,15 +36,29 @@ class Memes:
 
     # 3dshacks memes
     @commands.command(pass_context=True, hidden=True)
+    async def phoenix(self, ctx):
+        """Memes."""
+        await self._meme(ctx, "http://media.giphy.com/media/Lt20BESX85xoQ/giphy.gif")
+
+    @commands.command(pass_context=True, hidden=True)
+    async def serrara(self, ctx):
+        """Memes."""
+        await self._meme(ctx, "https://media.giphy.com/media/DWHy12Gy3W19K/giphy.gif")
+
+    @commands.command(pass_context=True, hidden=True)
     async def s_99(self, ctx):
         """Memes."""
         await self._meme(ctx, "**ALL HAIL BRITANNIA!**")
 
     @commands.command(pass_context=True, hidden=True)
-    async def xor(self, ctx):
+    async def pixl(self, ctx):
         """Memes."""
-        await self.bot.delete_message(ctx.message)
-        await self.bot.send_message(ctx.message.author, "This command has been replaced with the emote :xor:.")
+        await self._meme(ctx, "```all heil creamsicle```")
+
+    @commands.command(pass_context=True, hidden=True)
+    async def banned(self, ctx):
+        """Memes."""
+        await self._meme(ctx, "https://cdn.discordapp.com/attachments/270629800383741954/272416630565240832/ISmLp.gif")
 
     @commands.command(pass_context=True, hidden=True)
     async def megumi(self, ctx):
@@ -117,10 +131,10 @@ class Memes:
         await self._meme(ctx, "http://i.imgur.com/vpu8bX3.png")
 
     @commands.command(pass_context=True, hidden=True)
-    async def pbanj(self, ctx):
+    async def love(self, ctx):
         """Memes."""
         await self.bot.delete_message(ctx.message)
-        await self.bot.send_message(ctx.message.author, "This command has been replaced with the emote :pbanj:.")
+        await self.bot.send_message(ctx.message.author, "You know I'll always love you, even if we can't tell anyone.")
 
     # Cute commands :3
     @commands.command(pass_context=True, hidden=True)

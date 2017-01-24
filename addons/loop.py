@@ -22,7 +22,7 @@ class Loop:
     cooldown = 30
     is_active = True
 
-    last_hour = datetime.datetime.now().hour
+    last_day = datetime.datetime.now().day
 
     async def start_update_loop(self):
         # thanks Luc | ルカリオ#5653
@@ -31,9 +31,9 @@ class Loop:
             try:
                 # print("loop")
                 timestamp = datetime.datetime.now()
-                if timestamp.minute == 0 and timestamp.hour != self.last_hour:
-                    await self.bot.send_message(self.bot.helpers_channel, "{} has {} members at this hour!".format(self.bot.server.name, self.bot.server.member_count))
-                    self.last_hour = timestamp.hour
+                if timestamp.minute == 0 and timestamp.day != self.last_day:
+                    await self.bot.send_message(self.bot.helpers_channel, "{} has {} members today!".format(self.bot.server.name, self.bot.server.member_count))
+                    self.last_day = timestamp.day
                 #for user_id, times in self.bot.timedbans.items():
                 #    pass
             except Exception as e:

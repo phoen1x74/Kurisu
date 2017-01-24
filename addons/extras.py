@@ -15,11 +15,16 @@ class Extras:
     async def kurisu(self):
         """About Kurisu"""
         embed = discord.Embed(title="Kurisu", color=discord.Color.green())
-        embed.set_author(name="916253 and ihaveahax")
+        embed.set_author(name="916253 and ihaveahax, modified for this server by phoen1x74")
         embed.set_thumbnail(url="http://static.zerochan.net/Makise.Kurisu.full.1998946.jpg")
         embed.url = "https://github.com/916253/Kurisu"
         embed.description = "Kurisu, the 3DS Hacking Discord bot!"
         await self.bot.say("", embed=embed)
+
+    @commands.command()
+    async def apache2(self):
+        """Shows changes according to Kurisu's Apache 2.0 Liscense"""
+        await self.bot.say("```-word filter removed\n-.apache2 added\n-changed the automatic member count interval to days instead of hours\n-view added memes in .listmemes```")
 
     @commands.command()
     async def membercount(self):
