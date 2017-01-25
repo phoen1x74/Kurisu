@@ -135,4 +135,4 @@ for extension in addons:
 
 # Execute
 print('Bot directory: ', dir_path)
-bot.run(config['Main']['token'])
+bot.run(config['main']['token'])
